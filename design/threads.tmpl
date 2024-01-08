@@ -10,12 +10,11 @@ Gabriel Soares <gss12@cin.ufpe.br>
 
 ---- PRELIMINARIES ----
 
->> If you have any preliminary comments on your submission, notes for the
->> TAs, or extra credit, please give them here.
+Remove the thread from ready list and put it back after sufficient ticks have done.
 
->> Please cite any offline or online sources you consulted while
->> preparing your submission, other than the Pintos documentation, course
->> text, lecture notes, and course staff.
+The suggestion is to reimplement "timer_sleep()" in a way that avoids "busy waiting." 
+Instead of spinning in a loop, the thread should be placed in the ready list and 
+wait until it is awakened after the necessary time has passed.
 
                  ALARM CLOCK
                  ===========
