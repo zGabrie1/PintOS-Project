@@ -159,10 +159,5 @@ void thread_set_nice (int);
 int thread_get_recent_cpu (void);
 int thread_get_load_avg (void);
 
-/* Solution Code */
-/* For mlfqs 
-void mlfqs_inc_recent_cpu();
-void mlfqs_update_load_avg_and_recent_cpu();
-void mlfqs_update_priority();*/
 
 #endif /* threads/thread.h */
